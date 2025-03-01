@@ -8,7 +8,7 @@ say_something(What, 0) ->
 %%% compile but compiler throw error - spawn_ex1.erl:5: Warning: variable 'What' is unused
 % spawn_ex1.erl:9: Warning: wrong number of arguments in format call
 say_something(What, Times) ->
-	io:format("p-n", [What]),
+	io:format("~p~n", [What]),
 	say_something(What, Times - 1).
 
 start() ->
